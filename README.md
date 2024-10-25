@@ -20,4 +20,4 @@ Atributi skupa podataka:
 - Datum osnivanja  
 - Glavni sponzor
 - Broj osvojenih titula LaLige  
-- Ime i prezime trenutnog glavnog trenera  
+- Imena i prezimena trenutnih kapetana  
