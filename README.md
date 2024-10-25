@@ -1,2 +1,2 @@
 # Otvoreno-racunarstvo
-Repozitorij za laboratorijske vjezbe izz predmeta Otvoreno racunarstvo
+Repozitorij za laboratorijske vjezbe iz predmeta Otvoreno racunarstvo
