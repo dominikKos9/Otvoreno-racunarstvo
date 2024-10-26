@@ -15,7 +15,7 @@ Atributi skupa podataka:
 - Grad u kojem se nalazi  
 - Naziv stadiona  
 - Skracenica naziva kluba  
-- Naziv navijacke skupine  
+- Ime i prezime glavnog trenera  
 - Nadimak kluba  
 - Datum osnivanja  
 - Glavni sponzor
