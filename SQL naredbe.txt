@@ -1,0 +1,28 @@
+CREATE TABLE LaLiga (
+  id SERIAL PRIMARY KEY,
+  club_name TEXT,
+  city_name TEXT,
+  stadium_name TEXT,
+  abreviation TEXT,
+  fans_name TEXT,
+  nickname TEXT,
+  date_of_establishment DATE,
+  main_sponsor TEXT,
+  trophies_won INTEGER,
+  current_captains TEXT []
+);
+
+CSV:
+
+COPY laliga TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.csv' DELIMITER ',' CSV HEADER;
+
+JSON:
+
+COPY (SELECT row_to_json(t) FROM laliga AS t) 
+TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.json';
+
+
+INSERT INTO LaLiga (club_name, city_name, stadium_name, abreviation, manager_name, nickname, date_of_establishment, main_sponsor, trophies_won, current_captains)
+
+INSERT INTO LaLiga (club_name, city_name, stadium_name, abreviation, manager_name, nickname, date_of_establishment, main_sponsor, trophies_won, current_captains)
+VALUES('Futbol Club Barcelona','Barcelona','Camp Nou','FCB','Hans-Dieter Flick','Barca','29 November 1899','Spotify','27', ARRAY ['Marc-André ter Stegen','Frenkie de Jong'])
