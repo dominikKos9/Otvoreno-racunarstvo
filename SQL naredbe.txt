@@ -12,6 +12,10 @@ CREATE TABLE LaLiga (
   current_captains TEXT []
 );
 
+
+SELECT * FROM laliga;
+
+
 CSV:
 
 COPY laliga TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.csv' DELIMITER ',' CSV HEADER;
