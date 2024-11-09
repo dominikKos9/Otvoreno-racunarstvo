@@ -22,8 +22,7 @@ COPY laliga TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.csv' DELIMITER ',' C
 
 JSON:
 
-COPY (SELECT row_to_json(t) FROM laliga AS t) 
-TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.json';
+COPY (SELECT json_agg(t) FROM laliga t) TO 'C:\Users\Korisnik\Desktop\New folder\LaLiga.json';
 
 
 INSERT INTO LaLiga (club_name, city_name, stadium_name, abreviation, manager_name, nickname, date_of_establishment, main_sponsor, trophies_won, current_captains)
