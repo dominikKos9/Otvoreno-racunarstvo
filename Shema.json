@@ -1,0 +1,75 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Klubovi LaLige",
+    "description": "Skup podataka o klubovima iz Lalige za Otvoreno racunaarstvo",
+    "items": {
+        "type": "object",
+        "title": "Klub",
+        "required": [
+            "id",
+            "club_name",
+            "city_name",
+            "stadium_name",
+            "abreviation",
+            "manager_name",
+            "nickname",
+            "date_of_establishment",
+            "main_sponsor",
+            "trophies_won",
+            "current_captains"
+        ],
+        "properties": {
+            "id": {
+                "type": "integer",
+                "title": "The id Schema"
+            },
+            "club_name": {
+                "type": "string",
+                "title": "The club_name Schema"
+            },
+            "city_name": {
+                "type": "string",
+                "title": "The city_name Schema"
+            },
+            "stadium_name": {
+                "type": "string",
+                "title": "The stadium_name Schema"
+            },
+            "abreviation": {
+                "type": "string",
+                "title": "The abreviation Schema"
+            },
+            "manager_name": {
+                "type": "string",
+                "title": "The manager_name Schema"
+            },
+            "nickname": {
+                "type": "string",
+                "title": "The nickname Schema"
+            },
+            "date_of_establishment": {
+                "type": "string",
+                "title": "The date_of_establishment Schema"
+            },
+            "main_sponsor": {
+                "type": "string",
+                "title": "The main_sponsor Schema"
+            },
+            "trophies_won": {
+                "type": "integer",
+                "title": "The trophies_won Schema"
+            },
+            "current_captains": {
+                "type": "array",
+                "title": "The current_captains Schema",
+                "items": {
+                    "type": "string",
+                    "title": "Captaints name Schema"
+                }
+            }
+        }       
+    }     
+}
