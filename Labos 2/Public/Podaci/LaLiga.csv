@@ -1,0 +1,11 @@
+id,club_name,city_name,stadium_name,abreviation,manager_name,nickname,date_of_establishment,main_sponsor,trophies_won,current_captains
+1,Fútbol Club Barcelona,Barcelona,Camp Nou,FCB,Hans-Dieter Flick,Barca,1899-11-29,Spotify,27,"{""Marc-André ter Stegen"",""Frenkie de Jong""}"
+2,Real Madrid Club de Fútbol,Madrid,Santiago Bernabéu Stadium,RMA,Carlo Ancelotti,Los Blancos,1902-03-06,Emirates,36,"{""Luka Modrić"",""Daniel Carvajal""}"
+3,Atlético de Madrid,Madrid,Riyadh Air Metropolitano,ATM,Diego Simeone,Rojiblancos,1903-04-26,Riyadh Air,4,"{""Jorge Resurrección Merodio Koke"",""Jan Oblak""}"
+4,Sevilla Fútbol Club,Seville,Ramón Sánchez Pizjuán Stadium,SEV,Francisco Javier García Pimienta,Los Nervionenses,1890-01-25,Castore,1,"{""Jesús Navas"",""Nemanja Gudelj""}"
+5,Real Sociedad de Fútbol,San Sebastián,Anoeta Stadium,RSO,Imanol Alguacil Barrenetxea,La Real,1909-09-07,Yasuda Group,2,"{""Mikel Oyarzabal Ugarte"",""Igor Zubeldia Elorza""}"
+6,Valencia Club de Fútbol,Valencia,Mestalla Stadium,VAL,Rubén Baraja Vegas,Los Ches,1919-03-18,TM Real Estate Group,6,"{""José Luis Gayà Peña"",""José Luis García Vayá Pepelu""}"
+7,Villarreal Club de Fútbol,Villarreal,Estadio de la Cerámica,VIL,Marcelino García Toral,El Submarino Amarillo,1923-03-10,Pamesa cerámica,0,"{""Raúl Albiol Tortajada"",""Alejandro Baena Rodríguez""}"
+8,Athletic Club de Bilbao,Bilbao,San Mamés Stadium,ATH,Ernesto Valverde Tejedor,Lehoiak,1898-07-18,Kutxabank,8,"{""Yuri Berchiche Izeta"",""Óscar de Marcos Arana""}"
+9,Girona Fútbol Club,Girona,Estadi Montilivi,GIR,Miguel Ángel Sánchez Muñoz,Blanquivermells,1930-07-23,Etihad Airways,0,"{""Cristhian Stuani"",""Juan Pedro Ramírez López""}"
+10,Reial Club Deportiu Espanyol de Barcelona,Barcelona,RCDE Stadium,ESP,José Manuel González Álvarez,Periquitos,1900-10-28,Conserves Dani,0,"{""Sergi Gómez Sola"",""Javier Puado Díaz""}"
