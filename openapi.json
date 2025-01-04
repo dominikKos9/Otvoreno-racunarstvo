@@ -10,7 +10,7 @@
           }
     }, 
     "paths": {
-        "/LaLiga": {
+        "api/LaLiga": {
           "get": {
             "tags": [
               "LaLiga"
@@ -75,7 +75,7 @@
             }
           }
         },
-        "/LaLiga/{ID}": {
+        "api/LaLiga/{ID}": {
           "get": {
             "tags": [
               "LaLiga"
@@ -191,7 +191,7 @@
             }
           }
         },
-        "/clubName": {
+        "api/clubName": {
           "get": {
             "tags": [
               "Club names"
@@ -205,7 +205,7 @@
             }
           }
         },
-        "/stadiumName": {
+        "api/stadiumName": {
             "get": {
               "tags": [
                 "Stadium names"
@@ -219,7 +219,7 @@
               }
             }
         },
-            "/abreviation": {
+            "api/abreviation": {
                 "get": {
                   "tags": [
                     "abreviations"
@@ -233,7 +233,7 @@
                   }
                 }  
             },
-        "/api": {
+        "/openApi": {
           "get": {
             "tags": [
               "API"
