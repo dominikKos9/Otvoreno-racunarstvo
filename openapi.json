@@ -243,6 +243,9 @@
             "responses": {
               "200": {
                 "description": "Successful response"
+              },
+              "404": {
+                "description": "Not Found"
               }
             }
           }
