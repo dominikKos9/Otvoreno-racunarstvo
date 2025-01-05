@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DataTable</title>
+        <script src="/Scripts/script.js"></script>
+    </head>
+    <body>
+        <h1>Prikaz podataka</h1>
+        <form id="filter-form" action="#" method="post" name="pretraga">
+            <label for="search">Pretraži:</label>
+            <input type="text" id="search" name="search">
+            <label for="attribute">Odaberi atribut:</label>
+            <select id="attribute" name="attribute">
+                <option value="all">Svi atributi</option>
+                <option value="club_name">Naziv kluba</option>
+                <option value="city_name">Grad u kojem se nalazi</option>
+                <option value="stadium_name">Naziv stadiona</option>
+                <option value="abreviation">Skracenica naziva kluba</option>
+                <option value="manager_name">Ime i prezime trenera</option>
+                <option value="nickname">Nadimak kluba</option>
+                <option value="date_of_establishment">Datum osnivanja</option>
+                <option value="main_sponsor">Glavni sponzor</option>
+                <option value="trophies_won">Broj osvojenih titula prvaka LaLige</option>
+                <option value="current_captains">Trenutni kapetani</option>
+            </select>
+            <button type="button" id="filter-button">Filtriraj</button>
+        </form>
+
+
+        <h1>Podaci sa servera</h1>
+        <button id="downloadJSONButton">Preuzmi JSON</button>
+        <button id="downloadCSVButton">Preuzmi CSV</button>
+
+        <title>Prikaz podataka u tablici</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+    
+            table, th, td {
+                border: 1px solid black;
+            }
+    
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+    
+            th {
+                background-color: #f2f2f2;
+            }
+    
+            .captains {
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Podaci o klubovima</h1>
+    
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Club Name</th>
+                    <th>City</th>
+                    <th>Stadium</th>
+                    <th>Abbreviation</th>
+                    <th>Manager</th>
+                    <th>Nickname</th>
+                    <th>Date of Establishment</th>
+                    <th>Main Sponsor</th>
+                    <th>Trophies Won</th>
+                    <th>Current Captains</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>

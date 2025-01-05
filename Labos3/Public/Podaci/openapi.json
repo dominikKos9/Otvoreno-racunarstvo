@@ -1,0 +1,269 @@
+{ 
+    "openapi": "3.1.1", 
+    "info": { 
+        "title": "Klubovi LaLige", 
+        "version": "1.0.0" ,
+        "description": "API za bazu podataka klubova Lalige",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+          }
+    }, 
+    "paths": {
+        "api/LaLiga": {
+          "get": {
+            "tags": [
+              "LaLiga"
+            ],
+            "summary": "Popis klubova LaLige",
+            "description": "Vraća popis klubova LaLige",
+            "responses": {
+              "200": {
+                "description": "Successful response"
+              },
+              "500": {
+                "description": "Pogreška u bazi podataka"
+              }
+            }
+          },
+          "post": {
+            "tags": [
+              "LaLiga"
+            ],
+            "summary": "Kreiranje novog kluba",
+            "description": "Kreira i dodaje novi klub",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "ID": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Successful response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "ID": {
+                          "type": "string"
+                        },
+                        "klubovi": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "500": {
+                "description": "Database error"
+              }
+            }
+          }
+        },
+        "api/LaLiga/{ID}": {
+          "get": {
+            "tags": [
+              "LaLiga"
+            ],
+            "summary": "Jedan klub",
+            "description": "Vraća klub s atributima na temelju ID",
+            "parameters": [
+              {
+                "in": "path",
+                "name": "ID",
+                "schema": {
+                  "type": "string"
+                },
+                "required": true,
+                "description": "ID kluba koji treba dohvatiti"
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Successful response"
+              },
+              "404": {
+                "description": "Not Found"
+              },
+              "500": {
+                "description": "Database error"
+              }
+            }
+          },
+          "put": {
+            "tags": [
+              "LaLiga"
+            ],
+            "summary": "Ažuriranje kluba",
+            "description": "Ažuriranje kluba na temelju ID i tijela zahtjeva",
+            "parameters": [
+              {
+                "in": "path",
+                "name": "ID",
+                "schema": {
+                  "type": "string"
+                },
+                "required": true,
+                "description": "ID kluba koji treba ažurirati"
+              }
+            ],
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "ID": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Successful response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "ID": {
+                          "type": "string"
+                        },
+                        "klubovi": {
+                          "type": "array",
+                          "items": {
+                            "type": "object"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "404": {
+                "description": "Not Found"
+              },
+              "500": {
+                "description": "Database error"
+              }
+            }
+          },
+          "delete": {
+            "tags": [
+              "LaLiga"
+            ],
+            "summary": "Uklanjanje kluba",
+            "description": "Uklanja klub na temelju ID",
+            "parameters": [
+              {
+                "in": "path",
+                "name": "ID",
+                "schema": {
+                  "type": "string"
+                },
+                "required": true,
+                "description": "ID kluba koji treba ukloniti"
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Successful response"
+              },
+              "404": {
+                "description": "Not Found"
+              },
+              "500": {
+                "description": "Database error"
+              }
+            }
+          }
+        },
+        "api/clubName": {
+          "get": {
+            "tags": [
+              "Club names"
+            ],
+            "summary": "Popis imena klubova",
+            "description": "Vraća popis imena klubova",
+            "responses": {
+              "200": {
+                "description": "Successful response"
+              },
+              "500": {
+                "description": "Database error"
+              }
+            }
+          }
+        },
+        "api/stadiumName": {
+            "get": {
+              "tags": [
+                "Stadium names"
+              ],
+              "summary": "Popis imena stadiona",
+              "description": "Vraća popis imena stadiona",
+              "responses": {
+                "200": {
+                  "description": "Successful response"
+                },
+                "500": {
+                  "description": "Database error"
+                }
+              }
+            }
+        },
+            "api/abreviation": {
+                "get": {
+                  "tags": [
+                    "abreviations"
+                  ],
+                  "summary": "Popis Skraćenica imena klubova",
+                  "description": "Vraća popis skraćenica imena klubova",
+                  "responses": {
+                    "200": {
+                      "description": "Successful response"
+                    },
+                    "500": {
+                      "description": "Database error"
+                    }
+                  }
+                }  
+            },
+        "api/openApi": {
+          "get": {
+            "tags": [
+              "API"
+            ],
+            "summary": "API",
+            "description": "Dohvaća json datoteku sa openAPI dokumentacijom",
+            "responses": {
+              "200": {
+                "description": "Successful response"
+              },
+              "404": {
+                "description": "Not Found"
+              }
+            }
+          }
+        }
+    } 
+}
