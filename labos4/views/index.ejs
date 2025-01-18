@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Skup podataka o klubovima iz LaLige za Otvoreno racunarstvo">
+    <meta author="Dominik Kos">
+    <meta language="engleski">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Klubovi LaLige</title>
+</head>
+<body>
+    <% if(!isAuthenticated){ %>
+    <div class="login" id="login">
+        <a href="/login">Prijava</a>
+    </div>
+    <% } else { %>
+    <div class="profil" id="profil">
+        <a href="/profile">Korisnički profil</a>
+    </div>
+    <div class="preslike" id="preslike">
+        <a href="/osvjezi">Osvježi preslike</a>
+    </div>
+    <div class="odjava" id="odjava">
+        <a href="/logout">Odjava</a>
+    </div>
+    <% } %>
+
+    <div class="naslov">
+        <h1>Podaci o klubovima LaLige</h1>
+    </div>
+    <hr class="crta" id="crta">
+    <div>
+<p>Licenca: Creative Commons CC0 License, Creative Commons Attribution-ShareAlike License</p>
+<p>Naziv autora: Dominik Kos</p>
+<p>Verzija skupa podataka: 1.0</p>
+<p>Jezik: engleski</p>
+<p>Podatci preuzeti sa: Wikidata</p>
+<p>Datum objave: 28.10.2024</p>
+<p>Atributi skupa podataka:</p>
+<li>Naziv kluba</li>
+<li>Grad u kojem se nalazi</li>
+<li>Naziv stadiona</li>
+<li>Skracenica naziva kluba</li>
+<li>Ime i prezime glavnog trenera</li>
+<li>Nadimak kluba</li>
+<li>Datum osnivanja</li>
+<li>Glavni sponzor</li>
+<li>Broj osvojenih titula LaLige</li>
+<li>Imena i prezimena trenutnih kapetana</li>
+    </div>
+    <hr class="crta" id="crta">
+    <div class="stranica">
+        <div class="poveznice" id="poveznice">
+            <p>Poveznice za preuzimanje podataka u CSV i JSON formatu:</p>
+            <ul>
+                <p><a href="/Podaci/LaLiga.csv" download>Preuzmi podatke u CSV formatu</a></p>
+                <p><a href="/Podaci/LaLiga.json" download>Preuzmi podatke u JSON formatu</a></p>
+            </ul>
+        </div>
+        <hr class="crta" id="druga">
+        <div class="button" id="button">
+            <a href="/datatable">DataTable</a>
+        </div>
+    </div>
+</body>
+</html>

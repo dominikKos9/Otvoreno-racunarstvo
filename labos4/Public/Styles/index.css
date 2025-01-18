@@ -1,0 +1,105 @@
+.naslov {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.button {
+    opacity: 1;
+    z-index: 2;
+    margin: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.crta {
+    z-index: 2;
+    opacity: 1;
+    background-color: darkblue;
+    height: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#druga {
+    margin-bottom: 300px;
+}
+
+.stranica {
+    width: 100%;
+    height: 750px;
+    background-image: url('/Photos/stadium.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.login {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    opacity: 1;
+    margin: 25px;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.odjava {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    opacity: 1;
+    margin: 5px;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.preslike {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    opacity: 1;
+    margin: 5px;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.profil {
+    position: absolute;
+    top: 65px;
+    right: 25px;
+    opacity: 1;
+    margin: 5px;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.poveznice {
+    font-weight: bold;
+    opacity: 1;
+    z-index: 2;
+    padding: 25px;
+    text-align: center;
+}
